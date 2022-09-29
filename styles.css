@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background: #1D1E23;
+
+    
+    
+}
+
+.navbar{
+    background: #1D1E23;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+
+    background-size: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Unna', serif;
+}
+
+#navbar__logo:hover{
+    color: #ff8177;
+    transition: all .7s ease;
+    
+}
+
+
+.navbar__menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px; /* makes the HOME higher in nav*/
+    font-size: 12px;
+    background-color: #fff;
+    background-size: 100%;
+}
+
+.navbar__links{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 01rem;
+    height: 100%;
+}
+
+.navbar__links:hover{
+    color: #ff8177;
+    transition: all 1.3s ease;
+}
+
+
+.main__container{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    flex:auto;
+}
+
+
+.main__container > div {
+    flex: auto;
+    text-align: center;
+  
+    margin: 15px;  /* and that, will result in a 10px gap */
+}
+
+
+img[src="images/selfPortrait.png"] {
+    height:500px;
+    border-radius: 40%;
+    padding: 2px;
+    background-color: #fff;
+}
+
+.main__container .info {
+    padding-top: 10px;
+    text-align: left;
+    color:#fff;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 200px;
+}
+.info{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+.info__title{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #fcadad 0%, #e252ff 100%);
+    transition: all .3s ease;
+    margin-bottom: 10px;
+    font-size: 70px;
+    
+} 
+
+.info__title_second{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #eaef93 0%,#f745aa 100%);
+    transition: all .3s ease;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 40px;
+} 
+
+.info__title_third{
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-color: #ff8177;
+    background-image: linear-gradient(to right, #c1f0bf 0%,#002aff 100%);
+    transition: all .3s ease;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-size: 26px;
+} 
+
+#title{
+    font-family: 'Unna', serif;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.info ul li::before {
+    content: "\f005";
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
+}
+
+.info ul li{
+    padding: 12px;
+}
+
+#link_logos{
+    font-size: 2em;
+    padding:10px;
+    color: #fff;
+
+}
+
+/* UPDATe*/
+@media screen and (max-width:920px){
+    .navbar__container{
+        display:flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+
+    .navbar__menu{
+        display: grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -1000px;
+        opacity: 0;
+        transition: all 0.5s ease;
+        height: 50vh;
+        z-index: -1;
+    }
+}
+
+
+/* Hero Section */
