@@ -170,6 +170,7 @@ img[src="images/selfPortrait.png"] {
     content: "\f005";
     font-family: "Font Awesome 5 Free";
     padding: 0 10px 0 0;
+    color: #eaef93;
 }
 
 .info ul li{
